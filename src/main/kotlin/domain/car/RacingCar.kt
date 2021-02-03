@@ -3,7 +3,7 @@ package domain.car
 import domain.result.RacingHistory
 
 class RacingCar(
-    private val user: String,
+    private val user: String = "guest",
     private val engine: CarEngine
 ) {
     private var position: Int = 0

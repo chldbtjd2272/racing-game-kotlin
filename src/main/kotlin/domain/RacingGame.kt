@@ -13,4 +13,15 @@ class RacingGame(users: List<String>, engine: CarEngine) {
             .map { round -> racingCars.race(round) }
             .toResult()
     }
+
+    companion object {
+        fun createGame(carCount: Int, engine: CarEngine): RacingGame {
+            return RacingGame(createGuests(carCount), engine)
+        }
+    }
+
+}
+
+private fun createGuests(count: Int): List<String> {
+    return (1..count).map { "guest" }
 }

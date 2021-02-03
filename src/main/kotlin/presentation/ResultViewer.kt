@@ -8,13 +8,13 @@ fun printResult(result: RacingResult) {
 }
 
 private fun printRoundResult(roundResult: RacingRoundResult) {
-    roundResult.racingHistories.forEach { racingHistory -> printPosition(racingHistory.position) }
+    roundResult.racingHistories.forEach { racingHistory -> printPosition(racingHistory.position)}
     println()
 }
 
 private fun printPosition(a: Int) = with(StringBuilder()) {
-    (1..a).map { append("-") }
-    toString()
+    (1..a).forEach { _ -> append("-") }
+    println(toString())
 }
 
 
