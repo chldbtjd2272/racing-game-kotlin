@@ -1,7 +1,6 @@
-package domain
+package domain.result
 
-class RacingHistory(val user: String, val enginePower: Int) {
-
+class RacingHistory(val user: String, val position: Int) {
 
 
     override fun equals(other: Any?): Boolean {
@@ -11,14 +10,14 @@ class RacingHistory(val user: String, val enginePower: Int) {
         other as RacingHistory
 
         if (user != other.user) return false
-        if (enginePower != other.enginePower) return false
+        if (position != other.position) return false
 
         return true
     }
 
     override fun hashCode(): Int {
         var result = user.hashCode()
-        result = 31 * result + enginePower
+        result = 31 * result + position
         return result
     }
 }

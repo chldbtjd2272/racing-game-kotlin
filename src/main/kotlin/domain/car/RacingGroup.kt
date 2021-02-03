@@ -1,6 +1,8 @@
-package domain
+package domain.car
 
-class RacingGroup(users: List<String>, private val engine: CarEngine) {
+import domain.result.RacingRoundResult
+
+class RacingGroup(users: List<String>, engine: CarEngine) {
     private val racingCars: List<RacingCar>
 
     init {

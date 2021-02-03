@@ -1,5 +1,7 @@
 package domain
 
+import domain.car.CarEngine
+import domain.result.RacingHistory
 import org.assertj.core.api.Assertions.assertThat
 import org.junit.jupiter.api.DisplayName
 import org.junit.jupiter.api.Test
