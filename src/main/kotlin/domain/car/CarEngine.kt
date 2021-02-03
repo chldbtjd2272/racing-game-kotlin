@@ -1,5 +1,5 @@
 package domain.car
 
-interface CarEngine {
+fun interface CarEngine {
     fun getPower(): Int
 }
